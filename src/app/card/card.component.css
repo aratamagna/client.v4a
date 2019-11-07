@@ -1,0 +1,14 @@
+.content {
+  position: fixed;
+  top: 50%;
+  bottom: 21px;
+  left: 21px;
+  right: 21px;
+  background-color: #293846;
+  color: #f3f3f4;
+}
+
+.header {
+  position: fixed;
+  bottom: 50%;
+}

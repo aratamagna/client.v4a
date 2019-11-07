@@ -1,0 +1,11 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let item of list.drinkList; let i = index" (click)="toggleCAp(i)">
+    <div class="media">
+      <img src="{{item.image}}" class="align-self-center mr-3 iconWrapper rounded-circle">
+      <div class="media-body">
+        <h5 class="mt-3 text-right">{{item.label}}</h5>
+      </div>
+    </div>
+    <app-caps [drink]="item" *ngIf="capsToggle[i]"></app-caps>
+  </li>
+</ul>

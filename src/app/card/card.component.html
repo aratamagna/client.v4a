@@ -1,0 +1,13 @@
+<div class="card h-100" style="background-color: #000"
+[@cardAnimator]="animationState"
+(@cardAnimator.done)="resetAnimationState($event)"
+(swipeleft)='startAnimation("swipeleft")'
+(swiperight)='startAnimation("swiperight")'>
+<img src="{{cards[index].icon}}" class="card-img-top">
+<div class="content">
+  <div class="card-body">
+    <h5 class="card-title">{{cards[index].question}}</h5>
+    <p class="card-text">{{cards[index].description}}</p>
+  </div>
+</div>
+</div>
